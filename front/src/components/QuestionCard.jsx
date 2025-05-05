@@ -1,7 +1,7 @@
 
 const letters = ["A", "B", "C", "D", "E"];
 
-export default function QuestionCard({ step, question, onAnswer }) {
+function QuestionCard({ step, question, onAnswer }) {
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}
@@ -34,3 +34,5 @@ export default function QuestionCard({ step, question, onAnswer }) {
     </motion.div>
   );
 }
+
+export default QuestionCard;

@@ -16,7 +16,7 @@ const questions = [
   }
 ];
 
-export default function Form() {
+function Form() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [showEnd, setShowEnd] = useState(false);
@@ -47,3 +47,5 @@ export default function Form() {
     </div>
   );
 }
+
+export default Form;

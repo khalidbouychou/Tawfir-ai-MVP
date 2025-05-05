@@ -1,5 +1,5 @@
 
-export default function EndModal({ open, answers }) {
+function EndModal({ open, answers }) {
   if (!open) return null;
 
   return (
@@ -25,3 +25,5 @@ export default function EndModal({ open, answers }) {
     </motion.div>
   );
 }
+
+export default EndModal;

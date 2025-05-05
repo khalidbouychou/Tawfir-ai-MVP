@@ -6,7 +6,7 @@ const questions = [
   { id: 3, question: 'What do you want to achieve?', key: 'goal' },
 ]
 
-export default function FormFlow() {
+function FormFlow() {
   const [step, setStep] = useState(0)
   const [answers, setAnswers] = useState({})
 
@@ -40,3 +40,5 @@ export default function FormFlow() {
     </form>
   )
 }
+
+export default FormFlow
