@@ -95,7 +95,7 @@ export default function TypeformBinaryQuestionnaire() {
               <div className="flex space-x-4 mb-8">
                 <button
                   onClick={() => handleAnswer(true)}
-                  className="flex-1 bg-green-500 text-white py-4 px-6 rounded-xl hover:bg-green-600 transition-all duration-300 flex items-center justify-center shadow-md"
+                  className="flex-1 bg-bleu-500 text-white py-4 px-6 rounded-xl hover:bg-bleu-600 transition-all duration-300 flex items-center justify-center shadow-md"
                   aria-label="Yes"
                 >
                   <Check className="mr-2" size={20} />
