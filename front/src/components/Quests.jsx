@@ -139,8 +139,8 @@ export default function TypeformBinaryQuestionnaire() {
                     {questions.map((question) => (
                       <li key={question.id} className="flex justify-between items-center border-b pb-2 last:border-0">
                         <span className="text-gray-700">{question.text}</span>
-                        <span className={`font-medium ${answers[question.id] ? 'text-green-500' : 'text-red-500'}`}>
-                          {answers[question.id] ? 'Yes' : 'No'}
+                        <span className={`font-medium ${answers[question.id] ? 'text-blue-500' : 'text-red-500'}`}>
+                          {answers[question.id] ? 'Oui' : 'Non'}
                         </span>
                       </li>
                     ))}
