@@ -5,10 +5,12 @@ import { Check, X, ArrowRight, ArrowLeft } from 'lucide-react';
 export default function TypeformBinaryQuestionnaire() {
   // Sample questions
   const questions = [
-    { id: 1, text: "Do you currently have a website?" },
-    { id: 2, text: "Are you interested in improving your online presence?" },
-    { id: 3, text: "Do you handle sensitive user data?" },
-    { id: 4, text: "Would you like to receive a monthly newsletter?" }
+    { id: 1, text: "Êtes-vous propriétaire de votre résidence principale ?" },
+    { id: 2, text: "Avez-vous déjà réalisé une planification patrimoniale ?" },
+    { id: 3, text: "Épargnez-vous régulièrement chaque mois ?" },
+    { id: 4, text: "Avez-vous déjà utilisé des dispositifs d'épargne programmée ?" },
+    { id: 5, text: "Avez-vous des crédits en cours ?" },
+    { id: 6, text: "Disposez-vous de revenus complémentaires autres que votre activité principale ?" }
   ];
   
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -97,7 +99,7 @@ export default function TypeformBinaryQuestionnaire() {
                   aria-label="Yes"
                 >
                   <Check className="mr-2" size={20} />
-                  <span className="text-lg font-medium">Yes</span>
+                  <span className="text-lg font-medium">Oui</span>
                 </button>
                 
                 <button
@@ -106,7 +108,7 @@ export default function TypeformBinaryQuestionnaire() {
                   aria-label="No"
                 >
                   <X className="mr-2" size={20} />
-                  <span className="text-lg font-medium">No</span>
+                  <span className="text-lg font-medium">Non</span>
                 </button>
               </div>
               
@@ -117,7 +119,7 @@ export default function TypeformBinaryQuestionnaire() {
                   aria-label="Go back to previous question"
                 >
                   <ArrowLeft size={16} className="mr-1" />
-                  <span>Back</span>
+                  <span>Retour</span>
                 </button>
               )}
             </div>
@@ -129,7 +131,7 @@ export default function TypeformBinaryQuestionnaire() {
                 </div>
                 <h2 className="text-3xl font-bold mb-4">Thank you!</h2>
                 <p className="text-gray-600 mb-8">
-                  Your responses have been recorded. Here's a summary of your answers:
+                Vos réponses ont été enregistrées. Voici un résumé de vos réponses :
                 </p>
                 
                 <div className="bg-white rounded-lg shadow-md p-6 mb-8">
@@ -150,7 +152,7 @@ export default function TypeformBinaryQuestionnaire() {
                   className="bg-blue-500 text-white py-3 px-8 rounded-lg hover:bg-blue-600 transition-all duration-300 shadow-md flex items-center justify-center mx-auto"
                 >
                   <ArrowRight className="mr-2" size={16} />
-                  <span>Start Over</span>
+                  <span>Recommencer</span>
                 </button>
               </div>
             </div>
