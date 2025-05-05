@@ -104,7 +104,7 @@ export default function TypeformBinaryQuestionnaire() {
                 
                 <button
                   onClick={() => handleAnswer(false)}
-                  className="flex-1 bg-red-500 text-white py-4 px-6 rounded-xl hover:bg-red-600 transition-all duration-300 flex items-center justify-center shadow-md"
+                  className="flex-1 bg-red-400 text-white py-4 px-6 rounded-xl hover:bg-red-600 transition-all duration-300 flex items-center justify-center shadow-md"
                   aria-label="No"
                 >
                   <X className="mr-2" size={20} />
@@ -149,7 +149,7 @@ export default function TypeformBinaryQuestionnaire() {
                 
                 <button
                   onClick={restart}
-                  className="bg-blue-500 text-white py-3 px-8 rounded-lg hover:bg-blue-600 transition-all duration-300 shadow-md flex items-center justify-center mx-auto"
+                  className="bg-blue-400 text-white py-3 px-8 rounded-lg hover:bg-blue-600 transition-all duration-300 shadow-md flex items-center justify-center mx-auto"
                 >
                   <ArrowRight className="mr-2" size={16} />
                   <span>Recommencer</span>
