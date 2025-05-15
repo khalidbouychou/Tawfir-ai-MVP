@@ -12,5 +12,5 @@ up :
 
 push :
 	git add .
-	git commit -m ${m}
+	git commit -m "update"
 	git push
