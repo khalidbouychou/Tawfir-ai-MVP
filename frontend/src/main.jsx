@@ -1,10 +1,13 @@
-import { StrictMode } from 'react'
+import React from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import { ThemeProvider } from "@material-tailwind/react"
 import App from './App.jsx'
+import './index.css'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const root = createRoot(document.getElementById('root'))
+
+root.render(
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+);
